@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Book Archive</title>
+    <style>
+        .container h1{
+            text-align: center;
+        }
+        #books{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card{
+            background-color: aqua;
+            padding: 0 20px;
+            margin: 10px;
+            width: 28%;
+        }
+        #total-books{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>API: Book Archive Search</h1>
+
+
+        <!-- Search book  -->
+        <div>
+            <input type="text" id="name" placeholder="Enter book name">
+            <button id="search" onclick="searchBook()">Search Book</button>
+        </div>
+
+        <h4>Total <span id="total-books">0</span> books found</h4>
+        <!-- Display Books -->
+        <div id="books">
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
